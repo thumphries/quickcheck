@@ -229,7 +229,7 @@ monadic' (MkPropertyM m) = m (\prop -> return (return (property prop)))
 -- +++ OK, passed 100 tests.
 --
 monadicIO :: Testable a => PropertyM IO a -> Property
-monadicIO = monadic ioProperty
+monadicIO = monadic property
 
 #ifndef NO_ST_MONAD
 -- | Runs the property monad for 'ST'-computations.

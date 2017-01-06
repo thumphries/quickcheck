@@ -161,9 +161,6 @@ main = $quickCheckAll
 
 -- toSortedList (Node x h1 h2) = x : toSortedList (h1 `merge` h2)
 
-{-
-prop_HeapIsNotSorted (h :: Heap Int) =
-  expectFailure $
-    toList h == toSortedList h
--}
-
+-- prop_HeapIsNotSorted (h :: Heap Int) =
+--   expectFailure $
+--     toList h == toSortedList h
